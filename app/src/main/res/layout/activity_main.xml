@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar initialized in code with ranges set" />
+
+        <LinearLayout
+            android:id="@+id/seekbar_placeholder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from xml with default range" />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:textAboveThumbsColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from xml with ranges set" />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:absoluteMaxValue="150"
+            rsb:absoluteMinValue="20"
+            rsb:textAboveThumbsColor="@color/red"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from xml with ranges set and double values" />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:absoluteMaxValue="140.54"
+            rsb:absoluteMinValue="15.23"
+            rsb:textAboveThumbsColor="@color/green"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from xml with single thumb to true" />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:absoluteMaxValue="150"
+            rsb:absoluteMinValue="20"
+            rsb:singleThumb="true"
+            rsb:textAboveThumbsColor="@color/blue"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from xml with custom color to text above thumbs " />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:textAboveThumbsColor="@android:color/holo_green_light"
+            rsb:absoluteMaxValue="150"
+            rsb:absoluteMinValue="20"
+            rsb:singleThumb="true"
+       />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from code with custom color to text above thumbs " />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:id="@+id/rangeSeekBarTextColorWithCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:absoluteMaxValue="150"
+            rsb:absoluteMinValue="20"
+            rsb:singleThumb="true"
+            rsb:textAboveThumbsColor="@color/magenta"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from xml with custom thumb handle" />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:absoluteMaxValue="150"
+            rsb:absoluteMinValue="20"
+            rsb:thumbDisabled="@mipmap/ic_launcher"
+            rsb:thumbNormal="@mipmap/ic_launcher"
+            rsb:thumbPressed="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Range seek bar from xml with no text above" />
+
+        <com.yahoo.mobile.client.android.util.rangeseekbar.RangeSeekBar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rsb:absoluteMaxValue="150"
+            rsb:absoluteMinValue="20"
+            rsb:valuesAboveThumbs="false" />
+
+    </LinearLayout>
+
+</ScrollView>
